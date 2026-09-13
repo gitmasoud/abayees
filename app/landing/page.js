@@ -1,4 +1,5 @@
 import Image from "next/image";
+import styles from "./landing.css"
 
 export default function Landing() {
   return (
@@ -9,7 +10,7 @@ export default function Landing() {
 
 
   <nav>
-    <div class="brand">Abaya Collection</div>
+    <div className="styles.brand">Abaya Collection</div>
     <ul>
       <li>Shop</li>
       <li>Collections</li>
