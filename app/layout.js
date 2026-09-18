@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Abayees",
-  description: "Top Abayas in UK",
+  description: "Top Abayas in the UK",
 };
 
 export default function RootLayout({ children }) {
