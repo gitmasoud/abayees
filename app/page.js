@@ -1,6 +1,8 @@
 import Image from "next/image";
 import styles from "./landing.css"
 
+//var paddingBrand = 
+
 export default function Landing() {
   return (
     <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
@@ -10,7 +12,7 @@ export default function Landing() {
 
 
   <nav>
-    <div className="styles.brand">Abaya Collection</div>
+    <div className="styles.brand" style={{ paddingRight: '1.5em' }}>Abaya Collection</div>
     <ul>
       <li>Shop</li>
       <li>Collections</li>
@@ -38,7 +40,7 @@ export default function Landing() {
       <div className="card-body">
         <h3>The Everyday Black</h3>
         <p className="desc">Timeless front-open silhouette in premium Nidha fabric. Effortless layering for daily elegance.</p>
-        <span className="price">£65.00</span>
+        <span className="price">£45.00</span>
       </div>
     </article>
 
@@ -50,7 +52,7 @@ export default function Landing() {
       <div className="card-body">
         <h3>The Monarch</h3>
         <p className="desc">Hand-beaded butterfly motifs trail down the front panel and up one sleeve — an enchanting, wearable work of art.</p>
-        <span className="price">£149.00</span>
+        <span className="price">£35.00</span>
       </div>
     </article>
 
@@ -62,7 +64,7 @@ export default function Landing() {
       <div className="card-body">
         <h3>Abayat Al-Farashah</h3>
         <p className="desc">Flowy, wide-cut sleeves inspired by butterfly wings. Lightweight drape for effortless movement.</p>
-        <span className="price">£95.00</span>
+        <span className="price">£45.00</span>
       </div>
     </article>
 
@@ -74,7 +76,7 @@ export default function Landing() {
       <div className="card-body">
         <h3>The Evening Edit</h3>
         <p className="desc">Intricate embroidery on a relaxed A-line silhouette. Designed for weddings, Eid, and formal gatherings.</p>
-        <span className="price">£120.00</span>
+        <span className="price">£45.00</span>
       </div>
     </article>
 
