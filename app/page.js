@@ -1,9 +1,18 @@
 import Image from "next/image";
 import styles from "./landing.css"
+import Link from "next/link"
+import AddToCart from "@/components/AddToCart"
+import Cart from "@/components/Cart";
 
 //var paddingBrand = 
 
 export default function Landing() {
+  const product = {
+    id: "ai-audit",
+    name: "Abaya 001",
+    price: 4500,
+  };
+
   return (
     <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans">
       <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white sm:items-start">
@@ -12,11 +21,11 @@ export default function Landing() {
 
 
   <nav>
-    <div className="styles.brand" style={{ paddingRight: '1.5em' }}>Abaya Collection</div>
+    <div className="brandName" style={{ paddingRight: '1.5em' }}><a href="/">Abayees</a></div>
     <ul>
-      <li>Shop</li>
-      <li>Collections</li>
-      <li>About</li>
+      <li><a href="#abayas">Collections</a></li>
+      <li><Link href="/about">About</Link></li>
+      <div style={{ paddingLeft: '120%' }}>  <Cart /> </div>
     </ul>
   </nav>
 
@@ -24,15 +33,15 @@ export default function Landing() {
     <h1>Timeless Elegance, Modern Silhouettes</h1>
     <p>Discover our curated abaya collection — where luxurious fabrics meet contemporary design, crafted for every occasion.</p>
     
-    <video controls width="100%">
+    <video controls>
       <source src="/img/abayee001video.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
   </section>
 
-  <div className="grid">
+  <div className="grid" >
 
-    <article className="card">
+    <article className="card" id="abayas">
       <div className="card-img">
         <img src="/img/abayee001.jpg" alt=" Black Front-Open Abaya" loading="eager" />
         <span className="tag">New In</span>
@@ -42,6 +51,7 @@ export default function Landing() {
         <p className="desc">Timeless front-open silhouette in premium Nidha fabric. Effortless layering for daily elegance.</p>
         <span className="price">£45.00</span>
       </div>
+      <AddToCart product={product} />
     </article>
 
     <article className="card">
@@ -54,6 +64,7 @@ export default function Landing() {
         <p className="desc">Hand-beaded butterfly motifs trail down the front panel and up one sleeve — an enchanting, wearable work of art.</p>
         <span className="price">£35.00</span>
       </div>
+      <AddToCart product={product} />
     </article>
 
     <article className="card">
@@ -66,6 +77,7 @@ export default function Landing() {
         <p className="desc">Flowy, wide-cut sleeves inspired by butterfly wings. Lightweight drape for effortless movement.</p>
         <span className="price">£45.00</span>
       </div>
+      <AddToCart product={product} />
     </article>
 
     <article className="card">
@@ -78,11 +90,12 @@ export default function Landing() {
         <p className="desc">Intricate embroidery on a relaxed A-line silhouette. Designed for weddings, Eid, and formal gatherings.</p>
         <span className="price">£45.00</span>
       </div>
+      <AddToCart product={product} />
     </article>
 
   </div>
 
-  <footer>© 2025 Abaya Collection. All rights reserved.</footer>
+  <footer>© 2026 Abayees Abaya Collection. All rights reserved.</footer>
 
 
       </main>

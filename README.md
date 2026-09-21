@@ -34,3 +34,48 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+Add to cart flow
+
+AddToCart.js
+    ↓
+localStorage["cart"]
+    ↓
+Cart page
+
+Add to cart and checkout flow - components
+
+AddToCart.js
+    ↓
+localStorage["cart"]
+    ↓
+Cart page
+    ↓
+Checkout button
+    ↓
+/api/checkout
+    ↓
+Stripe Checkout
+
+
+#2
+Add to cart and checkout flow - high level end to end
+------------------------------------------
+Add to cart
+     ↓
+localStorage
+     ↓
+Cart
+     ↓
+Checkout
+     ↓
+Stripe
+
+
+#3 API flows
+
+#1
+/api/checkout
+    ↓
+Stripe Checkout
