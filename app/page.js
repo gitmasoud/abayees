@@ -23,20 +23,48 @@ export default function Landing() {
   <nav>
     <div className="brandName" style={{ paddingRight: '1.5em' }}><a href="/">Abayees</a></div>
     <ul>
-      <li><a href="#abayas">Collections</a></li>
-      <li><Link href="/about">About</Link></li>
-      <div style={{ paddingLeft: '120%' }}>  <Cart /> </div>
-    </ul>
+  <li><a href="#abayas">Collections</a></li>
+  <li><Link href="/about">About</Link></li>
+   <li className="socialIcon">
+   <a
+  href="https://www.instagram.com/abayees26/"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Instagram"
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="22"
+    height="22"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+  </svg>
+</a>
+  </li>
+  <li className="cartItem">
+    <Cart />
+  </li>
+</ul>
   </nav>
 
   <section className="hero">
-    <h1>Timeless Elegance, Modern Silhouettes</h1>
-    <p>Discover our curated abaya collection — where luxurious fabrics meet contemporary design, crafted for every occasion.</p>
-    
     <video controls>
       <source src="/img/abayee001video.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
+  </section>
+
+  <section className="heroTxt">
+    <h1>Timeless Elegance, Modern Silhouettes</h1>
+    <p>Discover our curated abaya collection — where luxurious fabrics meet contemporary design, crafted for every occasion.</p>
   </section>
 
   <div className="grid" >
